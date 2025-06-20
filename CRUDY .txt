@@ -1,0 +1,45 @@
+ CRUDY 
+ 
+ Diseño visual bootstrap
+ 
+ Level 1 : Bienvenida , 3 puertas
+ 
+ puerta 1: Trampa
+ 
+ puerta 2: Segundo nivel
+ 
+ puerta 3: Mini juego
+ 
+ Acertijo de codigo
+ 
+ level 2:
+ 
+ tuneles o escaleras: siguiente nivel
+ 
+ túneles o escaleras: pregunta aritmetica
+  
+ tuneles o escaleras: pregunta (si/no)
+
+ level 3: cajas de colores con secuencia
+
+ intentos: 3
+ 
+ si agota los intentos pierde una vida y se devuelve al nivel anterior
+ 
+ level 4: logica fractal
+ 
+ pregunta 
+ ejemplo
+ a= b
+ b=c
+ c=d
+ d=a
+ 
+ level 5: jucio del nucleo 
+ 
+ pregunatas 5  con puntos 
+ 
+ 
+ 
+
+ 
