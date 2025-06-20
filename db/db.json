@@ -1,0 +1,24 @@
+{
+    "players": [
+        {
+            "name": "Isabella",
+            "lives": "3",
+            "points": "220"
+        },
+        {
+            "name": "Pelu",
+            "lives": "3",
+            "points": "0"
+        },
+        {
+            "name": "pelu",
+            "lives": "3",
+            "points": "0"
+        },
+        {
+            "name": "pelu",
+            "lives": "3",
+            "points": "0"
+        }
+    ]
+}
