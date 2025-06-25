@@ -1,3 +1,3 @@
-export let player = ""
-export let vidas = 3
-export let points = 0
+export var player = ""
+export var lives = 3
+export var points = 0

@@ -1,0 +1,37 @@
+
+export async function changeModule(moduleName) {
+    // obtiene  el elemento por id del documento html
+    const container = document.getElementById("root-content");
+    //pelu un loader pewrroooooo
+    container.innerHTML = "loading...";
+    //funcion fetch para obtener el elemnto html
+    try {
+        const response = await fetch(`src/${moduleName}/${moduleName}.html`);
+        if (!response.ok) throw new Error("Error al cargar el modulo");
+
+        const html = await response.text();
+        container.innerHTML = html;
+
+        //agregamos el css si no ha sido agregado
+        const existingStyle = document.querySelector(`link[data-module="${moduleName}"]`);
+        if (!existingStyle) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = `src/${moduleName}/${moduleName}.css`;
+            link.setAttribute("data-module", moduleName);
+            document.head.appendChild(link);
+        }
+        const existingScript = document.querySelector(`script[data-module="${moduleName}"]`);
+        if (!existingScript) {
+            const script = document.createElement("script");
+            script.src = `src/${moduleName}/${moduleName}.js`;
+            script.setAttribute("data-module", moduleName);
+            document.body.appendChild(script);
+        }
+
+    }
+    catch (error) {
+     console.error(error);
+     container.textContent = " ocurrio un error al cargar el modulo"
+    }
+}

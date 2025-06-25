@@ -1,0 +1,8 @@
+promesas
+
+estados de las promesas:
+pending
+fulfilled
+reject
+
+ejemplo:
