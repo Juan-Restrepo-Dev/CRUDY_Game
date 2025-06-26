@@ -26,6 +26,35 @@ The game seeks to strengthen skills such as:
 - Critical decision making
 - Memory and pattern analysis
 
+Project Structure
+
+📁 CRUDY_Game/
+├── assets/                
+├── src/                   
+│   ├── level1/            
+│   │   ├── index.html
+│   │   ├── style.css
+│   │   └── script.js
+│   ├── level2/            
+│   ├── level3/            
+│   ├── level4/            
+│   └── level5/            
+├── CRUDY.txt              
+├── CRUDY.md              
+├── README.md              
+└── index.html
+
+General Description of the Levels
+Initial Protocol – Choose between different paths: logic, simulation, or trap.
+
+Decision Maze – Doors with logical branching and consequences.
+
+Sequence Reconstruction – Memory and pattern replication challenge.
+
+Fractal Logic – Nested decision trees and chained logic.
+
+Final Judgment – Critical questions that determine your fate.
+
 Technologies used
 - HTML5
 - CSS
@@ -38,3 +67,16 @@ How to play
 2. Open the `index.html` file in your browser.
 3. Follow the instructions and solve the puzzles in each level.
 4. Each level you pass brings you closer to freeing your mind from N.E.X.O.'s control.
+
+Team Credits (clan: Ritchie)
+Juan José Restrepo
+Team Leader – Organization, unification of the project, development of the mini-game and the Sequence Reconstruction level.
+
+Isabella Pulgarín
+Developer – In charge of the Initial Protocol and Decision Maze levels. Task management in Azure DevOps.
+
+David
+Developer – Developed the Fractal Logic and Final Judgment levels.
+
+Jefferson
+Developer and Designer – Full visual design of the game, implementation of custom styles, and graphic adjustments in each level.
