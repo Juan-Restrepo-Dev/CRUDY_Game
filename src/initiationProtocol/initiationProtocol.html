@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./initiationProtocol.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+        <div id="text">
+            <h1 id="title">Bienvenido al Umbral de los Portales</h1>
+            <p id="paragraph">En este juego, cada decisión que tomes te llevará a un camino diferente. Tu objetivo es encontrar el portal correcto para avanzar.</p>
+            <p id="optionClick">Elige sabiamente. Haz clic en uno de los portales para comenzar tu travesía.</p>
+            <div id="textBelow"></div>
+        </div>
+
+        <div id="containerButtons">
+            <button type="button" class="btn btn-primary" onclick="startGame('simulated')" id="condition-button">Portal al entorno simulado</button>
+            <button type="button" class="btn btn-primary" onclick="startGame('trapped')" id="access-button">Portal de la trampa</button>
+            <button type="button" class="btn btn-primary" onclick="startGame('logical')" id="code-button">al núcleo lógico</button>   
+        </div> 
+
+
+    </main>
+    
+    <script src="./initiationProtocol.js"></script>
+</body>
+</html>
