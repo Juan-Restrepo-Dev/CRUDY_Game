@@ -1,0 +1,22 @@
+
+
+.container__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 250px;
+}
+
+.container__div img{
+    width: 200px;
+}
+
+
+
+.div__section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}

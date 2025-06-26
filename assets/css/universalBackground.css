@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #282828 ;
+    width: 100vw;
+    height: 100vh;
+}
+
+button{
+    background-color: #CB1B1B;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+button:hover{
+    background-color: #1D48FF;
+}
+
+.lineas img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    animation: brillo 8s  infinite;
+    z-index: -1;
+}
+
+@keyframes brillo{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
