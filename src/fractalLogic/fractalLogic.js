@@ -1,5 +1,7 @@
 import * as messenger from "./constants.js"
-
+import {getplayerData} from "../utils/utils.js"
+var playerData = getplayerData()
+playerData.lives
 // Espera a que el DOM cargue
 window.addEventListener("DOMContentLoaded", () => {
 // Obtener los botones por ID
