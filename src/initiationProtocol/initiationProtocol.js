@@ -1,4 +1,4 @@
-import {getplayerData} from "../utils/utils.js"
+import {getplayerData,nextLevel} from "../utils/utils.js"
 var playerData = getplayerData()
 
 let life = playerData.lives;
@@ -19,7 +19,7 @@ function startGame(option) {
         paragraph.textContent = "En este entorno, podrás practicar tus habilidades de programación y resolver desafíos.";
         optionClick.textContent = "Haz clic para iniciar el juego";
         containerButtons.innerHTML = `
-            <button class="btn btn-primary" onclick="startGame('startMini')">Iniciar desafío</button>
+            <button class="btn btn-primary" onclick="nextLevel('miniGame')">Iniciar desafío</button>
         `;
         
     }else if(option === "trapped") {
@@ -53,7 +53,7 @@ function startGame(option) {
         textBelow.textContent = `Puntaje actual: ${score}`;
         optionClick.textContent = "Haz clic para continuar al siguiente nivel";
         containerButtons.innerHTML = `
-            <button class="btn btn-primary" onclick="startGame('nextLevel')">Siguiente nivel</button>
+            <button class="btn btn-primary" onclick="nextLevel('decisionLabyrinth')">Siguiente nivel</button>
         `;
     }else if (option === "incorrect"){
         title.textContent = "Respuesta incorrecta";

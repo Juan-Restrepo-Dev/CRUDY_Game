@@ -1,4 +1,4 @@
-import {getplayerData} from "../utils/utils.js"
+import {getplayerData,nextLevel} from "../utils/utils.js"
 var playerData = getplayerData()
 
 
@@ -12,6 +12,8 @@ function labyrinth(option , option2 ) {
     let paragraph = document.getElementById("paragraph");
     let optionClick = document.getElementById("optionClick");
     let containerButtons = document.getElementById("containerButtons");
+    let textBelow = document.getElementById("textBelow");
+    
 
     if (option === "condition") {
         title.textContent = "¡Reto de condiciones!";
@@ -28,11 +30,15 @@ function labyrinth(option , option2 ) {
                 title.textContent = "¡Respuesta Correcta!";
                 paragraph.textContent = "¡Bien hecho! La condición es correcta ya que necesita que los 2 este true.";
                 optionClick.textContent = "Continuar";
+                score += 5;
+                textBelow.textContent = `Puntaje actual: ${score}`;
                 containerButtons.innerHTML = `
-                    <button class="btn btn-primary" onclick="labyrinth('condition')">Continuar</button>
+                    <button class="btn btn-primary" onclick="nextLevel('reconstructionChallenge')">Continuar</button>
                 `;
+
             }else if (option2 === "incorrect") {
                 life--;
+                score -= 2
                 if (life > 0) {
                     title.textContent = "Respuesta Incorrecta";
                     paragraph.textContent = `Inténtalo de nuevo. Te quedan ${life} vidas.`;
@@ -56,8 +62,10 @@ function labyrinth(option , option2 ) {
         title.textContent = "¡Acceso directo!";
         paragraph.textContent = "Has elegido el acceso directo. ¡Bien hecho!";
         optionClick.textContent = "Continuar";
+        score += 5;
+        textBelow.textContent = `Puntaje actual: ${score}`;
         containerButtons.innerHTML = `
-            <button class="btn btn-primary" onclick="labyrinth('code')">Continuar</button>
+            <button class="btn btn-primary" onclick="nextLevel('reconstructionChallenge')">Continuar</button>
         `;
 
     }else if (option === "code"){
@@ -75,10 +83,13 @@ function labyrinth(option , option2 ) {
         paragraph.textContent = "¡Bien hecho! La variable resultado tendrá el valor de 22, ya que se realiza una concatenación de cadena y número.";
         optionClick.textContent = "Continuar";
         containerButtons.innerHTML = `
-            <button class="btn btn-primary" onclick="labyrinth('condition')">Continuar</button>
+            <button class="btn btn-primary" onclick="nextLevel('reconstructionChallenge')">Continuar</button>
         `;
+        score += 5;
+
     }else if (option === "incorrect") {
         life--;
+        score -= 2
         if (life > 0) {
             title.textContent = "Respuesta Incorrecta";
             paragraph.textContent = `Inténtalo de nuevo. Te quedan ${life} vidas.`;
@@ -102,10 +113,12 @@ function condition(option2){
         paragraph.textContent = "¡Bien hecho! La condición es correcta ya que necesita que los 2 esten true.";
         optionClick.textContent = "Continuar";
         containerButtons.innerHTML = `
-            <button class="btn btn-primary" onclick="labyrinth('condition')">Continuar</button>
+            <button class="btn btn-primary" onclick="nexLevel()">Continuar</button>
         `;
+        score += 5;
     }else if (option2 === "incorrect") {
         life--;
+        score -= 2;
         if (life > 0) {
             title.textContent = "Respuesta Incorrecta";
             paragraph.textContent = `Inténtalo de nuevo. Te quedan ${life} vidas.`;
