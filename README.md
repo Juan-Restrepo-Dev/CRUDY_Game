@@ -69,6 +69,7 @@ How to play
 4. Each level you pass brings you closer to freeing your mind from N.E.X.O.'s control.
 
 Team Credits (clan: Ritchie)
+
 Juan José Restrepo
 Team Leader – Organization, unification of the project, development of the mini-game and the Sequence Reconstruction level.
 
