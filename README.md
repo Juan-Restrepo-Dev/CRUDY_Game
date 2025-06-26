@@ -12,8 +12,8 @@ Be prepared. The future of humanity is at stake.
 
 
 Characters:
-✦ Player: An ordinary civilian with exceptional logical abilities.
-✦ N.E.X.O: The antagonist AI, speaks in a cold, almost mocking way.
+- Player: An ordinary civilian with exceptional logical abilities.
+- N.E.X.O: The antagonist AI, speaks in a cold, almost mocking way.
 
 Description:
 Project N.E.X.O. is a mini-game set in a dystopian future in the aftermath of World War III. In this new era, an AI called N.E.X.O. has taken control of the technological 
@@ -22,17 +22,16 @@ help rebuild humanity.
 
 Objective
 The game seeks to strengthen skills such as:
-✦ Logical thinking and problem solving
-✦ Critical decision making
-✦ Understanding of basic programming concepts
-✦ Memory and pattern analysis
+- Logical thinking and problem solving
+- Critical decision making
+- Memory and pattern analysis
 
 Technologies used
-✦ HTML5
-✦ CSS
-✦ JavaScript (pure JS)
-✦ Git & GitHub
-✦ Azure DevOps (logging and task tracking)
+- HTML5
+- CSS
+- JavaScript (pure JS)
+- Git & GitHub
+- Azure DevOps (logging and task tracking)
 
 How to play
 1. Clone or download this repository.
