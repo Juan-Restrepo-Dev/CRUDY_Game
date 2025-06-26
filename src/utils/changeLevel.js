@@ -21,14 +21,17 @@ export async function changeModule(moduleName) {
             link.setAttribute("data-module", moduleName);
             document.head.appendChild(link);
         }
+ 
+       //agregamos el script
         const existingScript = document.querySelector(`script[data-module="${moduleName}"]`);
         if (!existingScript) {
             const script = document.createElement("script");
+            script.type ="module"
             script.src = `src/${moduleName}/${moduleName}.js`;
             script.setAttribute("data-module", moduleName);
+            script.onload = () => { console.log(`se a cargado el scipt del modulo ${moduleName}`)}
             document.body.appendChild(script);
         }
-
     }
     catch (error) {
      console.error(error);

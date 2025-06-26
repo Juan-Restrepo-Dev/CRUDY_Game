@@ -31,7 +31,7 @@ showDialogNewgame.addEventListener("click", () => {
 starGame.addEventListener("click", () => {
   let playerName = document.getElementById("playerName").value
   playerName = playerName.value;  
-  nextLevel(0,3,"reconstructionChallenge")
+  nextLevel(0,3,"initiationProtocol")
 });
 
 

@@ -16,7 +16,7 @@ export function getplayerData() {
 }
 
 export function nextLevel(winPoints, loseLives, nextLevel) {
-     lives -= loseLives;
+     lives = loseLives;
      points += winPoints;
      let mainRoot = document.getElementById("central")
      changeModule(nextLevel)

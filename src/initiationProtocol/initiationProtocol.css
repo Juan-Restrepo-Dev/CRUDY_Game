@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,9 +17,9 @@ h1, h2, h3 {
 }
 p {
     line-height: 1.6;
-}
+} */
 
-main{
+#text{
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
